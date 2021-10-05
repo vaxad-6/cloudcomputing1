@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MY FIRST WEBSITE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(197, 120, 19);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(73, 11, 97);
+  padding: 20px;
+  text-align: center;
+  color: rgb(252, 243, 243);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>First Website</h2>
+<hr>Learning How To host on Github</hr>
+
+
+
+<header>
+  <h2>Varad Kerkar</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="ABOUTME.html">About Me</a></li>
+      <li><a href="index.html">Contact Us</a></li>
+    
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Cloud Computing</h1>
+    <p>What is this Open Elective About?
+      Cloud computing is on-demand access, via the internet, to computing resources—applications, servers (physical servers and virtual servers), data storage, development tools, networking capabilities, and more—hosted at a remote data center managed by a cloud services provider (or CSP). The CSP makes these resources available for a monthly subscription fee or bills them according to usage.
+
+      Compared to traditional on-premises IT, and depending on the cloud services you select, cloud computing helps do the following:
+      <br>
+      Lower IT costs: Cloud lets you offload some or most of the costs and effort of purchasing, installing, configuring, and managing your own on-premises infrastructure. 
+      <br>
+      Improve agility and time-to-value: With cloud, your organization can start using enterprise applications in minutes, instead of waiting weeks or months for IT to respond to a request, purchase and configure supporting hardware, and install software. Cloud also lets you empower certain users—specifically developers and data scientists—to help themselves to software and support infrastructure.
+      
+      
+    <br>  
+    </p>  
+        
+  </article>
+</section>
+
+<footer>
+    <p><marquee>Goa Engineering College</marquee></p>
+</footer>
+
+</body>
+</html>
